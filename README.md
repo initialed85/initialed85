@@ -1,6 +1,6 @@
 <h1 align="center">Hi, I'm Ed 👋</h1>
 <p align="center">
-  <b>Principal Site Reliability Engineer</b> · Platform engineer · AI-native developer · Ex-Army comms tech<br/>
+  <b>Principal Site Reliability Engineer</b> · Platform engineer · AI-native developer · Ex-Army comms (Regular Army &amp; Special Operations)<br/>
   Perth, Western Australia 🇦🇺
 </p>
 
@@ -10,9 +10,12 @@
   <a href="https://quake.initialed85.cc/"><img src="https://img.shields.io/badge/play-Quake%20in%20your%20browser-8B0000?style=flat-square&logo=webassembly&logoColor=white" /></a>
 </p>
 
-Software generalist with a networking background. Over two decades I've worked across defence, mining automation and industrial IoT: Rust hot paths and PL/pgSQL at the bottom, Kubernetes fleets, CI and data platforms on top.
+Software generalist with a networking background. Over two decades I've worked across defence, mining automation, EV charging and industrial IoT: Rust hot paths and PL/pgSQL at the bottom, Kubernetes fleets, CI and data platforms on top.
 
-These days I spend a lot of my time making **coding agents work like a team**: AI code reviewers that argue with each other, Claude Code sessions that know about their peers, and memory that carries over from one session to the next. Up to 20+ agent sessions a day, with guardrails I built myself.
+Two things I keep coming back to:
+
+- 🧪 **Production on a laptop.** If a developer can't spin up something that behaves like prod, they're guessing. I've built one-command dev environments generated from the same config we ship to customers. Some replay anonymised data from real sites; others run a whole EV-charging platform with simulated chargers.
+- 🤖 **Making coding agents work like a team.** AI code reviewers that argue with each other, Claude Code sessions that know about their peers, and memory that carries over between sessions. Up to 20+ agent sessions a day, with guardrails I built myself.
 
 ---
 
@@ -20,7 +23,8 @@ These days I spend a lot of my time making **coding agents work like a team**: A
 
 - 🤖 **AI code review at work.** Two reviewers that disagree on purpose: one is an agentic Claude bot with repo tools and release history, the other is a sandboxed Codex reviewer that has to try to refute a finding before it can block a PR. Several hundred PRs reviewed so far.
 - 🧠 **Multi-agent dev setup.** Claude Code hooks for peer awareness, past-session memory, `/fork` into worktrees, and Slack pings when an agent is idle with unpushed work.
-- 🍎 **[Macgrubernetes](https://github.com/initialed85/macgrubernetes).** Native macOS workloads as Kubernetes pods ([maclet](https://github.com/initialed85/maclet) + [macker](https://github.com/initialed85/macker)), so my Mac can run local AI work as part of my home K3s cluster.
+- 🍎 **[Macgrubernetes](https://github.com/initialed85/macgrubernetes).** Native macOS workloads as Kubernetes pods ([maclet](https://github.com/initialed85/maclet) + [macker](https://github.com/initialed85/macker)), so Apple Silicon can serve local AI inside my home K3s cluster. It's running at home right now.
+- 🏠 **Local AI lab.** A self-hosted assistant (Open WebUI over llama-server with a 262k-token context, web search and a locked-down sandbox pod for tools), local voice chat, and a from-scratch agent loop in Go.
 - 🗣️ **trough.** Claude, Codex and Pi agents, and their humans, coordinating over plain IRC through long-lived "steward" agents.
 
 ### 🛠️ Things I've built that I still like
@@ -30,10 +34,11 @@ These days I spend a lot of my time making **coding agents work like a team**: A
 | [camry](https://github.com/initialed85/camry) | Home CCTV with YOLO object detection, running at my place for years |
 | [djangolang](https://github.com/initialed85/djangolang) | Point it at a Postgres DB and it generates a REST and WebSocket CDC API server in Go |
 | [pi-team-room](https://github.com/initialed85/pi-team-room) | A shared team room for parallel Pi coding-agent sessions |
-| [standup](https://github.com/initialed85/standup) | A daily Slack digest of what I and my agents actually shipped |
 | [Quake](https://github.com/initialed85/Quake) | 1996 Quake with CMake, WASM and WebSocket multiplayer ([play it](https://quake.initialed85.cc/)) |
+| [mqtt_things](https://github.com/initialed85/mqtt_things) | Home automation (sprinklers, air-cons, heater, lights) running since 2020 |
 | [loser](https://github.com/initialed85/loser) | Prometheus exporter for high-frequency TCP/UDP network metrics |
-| [home-ops](https://github.com/initialed85/home-ops) | The GPU-equipped home cluster that runs all of the above |
+
+Upstream fixes merged into [ocpp-go](https://github.com/lorenzodonini/ocpp-go), [redpanda-data/connect](https://github.com/redpanda-data/connect) and [gopy](https://github.com/go-python/gopy).
 
 ### 🧰 Usual suspects
 
@@ -56,4 +61,4 @@ These days I spend a lot of my time making **coding agents work like a team**: A
 
 #### Outside work
 
-Dad of two · home automation · robotics and microcontrollers · motorcycles · music production · Minecraft with my son
+Dad of two · robotics and microcontrollers · motorbikes · music production · Minecraft with my son
