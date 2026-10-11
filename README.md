@@ -12,20 +12,20 @@
 
 Software generalist with a networking background. Over two decades I've worked across defence, mining automation, EV charging and industrial IoT: Rust hot paths and PL/pgSQL at the bottom, Kubernetes fleets, CI and data platforms on top.
 
-Two things I keep coming back to:
+Three things I keep coming back to:
 
-- 🧪 **Production on a laptop.** If a developer can't spin up something that behaves like prod, they're guessing. I've built one-command dev environments generated from the same config we ship to customers. Some replay anonymised data from real sites; others run a whole EV-charging platform with simulated chargers.
-- 🤖 **Making coding agents work like a team.** AI code reviewers that argue with each other, Claude Code sessions that know about their peers, and memory that carries over between sessions. Up to 20+ agent sessions a day, with guardrails I built myself.
+- 🧪 **Production on a laptop** If a developer can't spin up something that behaves like prod, they're guessing. I've built one-command dev environments generated from the same config we ship to customers. Some replay anonymised data from real sites; others run a whole EV-charging platform with simulated chargers.
+- 🧠 **Run LLMs locally** I'm driven to find a workable local LLM setup; daily driver is [Niko1221/Strata](github.com/Niko1221/Strata) at the moment
+- 🤖 **Making coding agents work like a team** AI code reviewers that argue with each other, Claude Code sessions that know about their peers, and memory that carries over between sessions. Up to 20+ agent sessions a day, with guardrails I built myself.
 
 ---
 
 ### 🔭 Currently
 
-- 🤖 **AI code review at work.** Two reviewers that disagree on purpose: one is an agentic Claude bot with repo tools and release history, the other is a sandboxed Codex reviewer that has to try to refute a finding before it can block a PR. Several hundred PRs reviewed so far.
-- 🧠 **Multi-agent dev setup.** Claude Code hooks for peer awareness, past-session memory, `/fork` into worktrees, and Slack pings when an agent is idle with unpushed work.
-- 🍎 **[Macgrubernetes](https://github.com/initialed85/macgrubernetes).** Native macOS workloads as Kubernetes pods ([maclet](https://github.com/initialed85/maclet) + [macker](https://github.com/initialed85/macker)), so Apple Silicon can serve local AI inside my home K3s cluster. It's running at home right now.
-- 🏠 **Local AI lab.** A self-hosted assistant (Open WebUI over llama-server with a 262k-token context, web search and a locked-down sandbox pod for tools), local voice chat, and a from-scratch agent loop in Go.
-- 🗣️ **trough.** Claude, Codex and Pi agents, and their humans, coordinating over plain IRC through long-lived "steward" agents.
+- 🤖 **AI code review at work** Two reviewers that disagree on purpose: one is an agentic Claude bot with repo tools and release history, the other is a sandboxed Codex reviewer that has to try to refute a finding before it can block a PR. Several hundred PRs reviewed so far.
+- 🧠 **Multi-agent dev setup** Claude Code hooks for peer awareness, past-session memory, `/fork` into worktrees, and Slack pings when an agent is idle with unpushed work.
+- 🍎 **[Macgrubernetes](https://github.com/initialed85/macgrubernetes)** Native macOS workloads as Kubernetes pods ([maclet](https://github.com/initialed85/maclet) + [macker](https://github.com/initialed85/macker)), so Apple Silicon can serve local AI inside my home K3s cluster. It's running at home right now.
+- 🏠 **Local AI lab** Local Qwen3.8 Flash Next for agentic coding, local LiquidAI LFM2.5 for image classification, local Laya for decisions, local YOLO for object detection (GPU and Google Coral)
 
 ### 🛠️ Things I've built that I still like
 
@@ -61,4 +61,4 @@ Upstream fixes merged into [ocpp-go](https://github.com/lorenzodonini/ocpp-go), 
 
 #### Outside work
 
-Dad of two · robotics and microcontrollers · motorbikes · music production · Minecraft with my son
+Dad of two · robotics and microcontrollers · motorbikes · music production · gaming with my older son
