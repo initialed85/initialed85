@@ -15,16 +15,19 @@ Software generalist with a networking background. Over two decades I've worked a
 Three things I keep coming back to:
 
 - 🧪 **Production on a laptop** If a developer can't spin up something that behaves like prod, they're guessing. I've built one-command dev environments generated from the same config we ship to customers. Some replay anonymised data from real sites; others run a whole EV-charging platform with simulated chargers.
-- 🧠 **Run LLMs locally** I'm driven to find a workable local LLM setup; daily driver is [Niko1221/Strata](github.com/Niko1221/Strata) at the moment
-- 🤖 **Making coding agents work like a team** AI code reviewers that argue with each other, Claude Code sessions that know about their peers, and memory that carries over between sessions. Up to 20+ agent sessions a day, with guardrails I built myself.
+- 🧠 **Local AI** Private AI on my own hardware, for real work. Daily driver right now: [Niko1221/Strata](https://github.com/Niko1221/Strata)
+- 🤖 **Making coding agents work like a team** AI code reviewers that argue with each other, long-lived agents that own a repo each, and work I steer from Slack. 325+ merged PRs in 8 weeks, each gated by CI and AI review.
 
 ---
 
 ### 🔭 Currently
 
 - 🤖 **AI code review at work** Two reviewers that disagree on purpose: one is an agentic Claude bot with repo tools and release history, the other is a sandboxed Codex reviewer that has to try to refute a finding before it can block a PR. Several hundred PRs reviewed so far.
-- 🧠 **Multi-agent dev setup** Claude Code hooks for peer awareness, past-session memory, `/fork` into worktrees, and Slack pings when an agent is idle with unpushed work.
+- 💬 **Work orchestrated from Slack** [slack-channel](https://github.com/initialed85/slack-channel) hands an `@claude` message to a long-lived "boss" session, which delegates to per-repo agents and coordinates openly with coworkers' Claudes in the same threads.
+- 📦 **Doing more with less hardware** With RAM and server prices climbing: bin-packing CI onto hardware we own, with a test work queue, runners sized from measured usage, and content-keyed images reused rather than rebuilt.
+- 🔐 **Data-loss prevention with private AI** On-prem AI that catches credentials pasted into support tickets and sanitises them before they spread.
 - 🍎 **[Macgrubernetes](https://github.com/initialed85/macgrubernetes)** Native macOS workloads as Kubernetes pods ([maclet](https://github.com/initialed85/maclet) + [macker](https://github.com/initialed85/macker)), so Apple Silicon can serve local AI inside my home K3s cluster. It's running at home right now.
+- 🐝 **[slopyphus](https://github.com/initialed85/slopyphus)** ~20 long-lived Pi coding agents, one per repo, on one web desktop, sharing [pi-team-room](https://github.com/initialed85/pi-team-room), a knowledge-graph memory and [rooter](https://github.com/initialed85/rooter) (cache-sticky routing across local llama.cpp boxes). I steer them from my phone via [pi-chat](https://github.com/initialed85/pi-bot).
 - 🏠 **Local AI lab** Local Qwen3.8 Flash Next for agentic coding, local LiquidAI LFM2.5 for image classification, local Laya for decisions, local YOLO for object detection (GPU and Google Coral)
 
 ### 🛠️ Things I've built that I still like
@@ -33,7 +36,7 @@ Three things I keep coming back to:
 |---|---|
 | [camry](https://github.com/initialed85/camry) | Home CCTV with YOLO object detection, running at my place for years |
 | [djangolang](https://github.com/initialed85/djangolang) | Point it at a Postgres DB and it generates a REST and WebSocket CDC API server in Go |
-| [pi-team-room](https://github.com/initialed85/pi-team-room) | A shared team room for parallel Pi coding-agent sessions |
+| [mcbot](https://github.com/initialed85/mcbot) | AI agent for a family Minecraft server, with guardrails enforced in code, not prompts |
 | [Quake](https://github.com/initialed85/Quake) | 1996 Quake with CMake, WASM and WebSocket multiplayer ([play it](https://quake.initialed85.cc/)) |
 | [mqtt_things](https://github.com/initialed85/mqtt_things) | Home automation (sprinklers, air-cons, heater, lights) running since 2020 |
 | [loser](https://github.com/initialed85/loser) | Prometheus exporter for high-frequency TCP/UDP network metrics |
